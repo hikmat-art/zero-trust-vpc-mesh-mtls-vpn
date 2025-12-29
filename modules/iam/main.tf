@@ -31,7 +31,7 @@ resource "aws_iam_role_policy" "terraform_policy" {
         Action   = [
           "s3:GetObject",
           "s3:PutObject",
-          "s3:ListBucket"
+          "s3:ListBucket",
           "ec2:Describe*",
           "ec2:CreateVpc",
           "ec2:DeleteVpc",
