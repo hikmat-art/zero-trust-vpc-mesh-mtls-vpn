@@ -29,6 +29,9 @@ resource "aws_iam_role_policy" "terraform_policy" {
       {
         Effect   = "Allow"
         Action   = [
+          "s3:GetObject",
+          "s3:PutObject",
+          "s3:ListBucket"
           "ec2:Describe*",
           "ec2:CreateVpc",
           "ec2:DeleteVpc",
@@ -52,6 +55,8 @@ resource "aws_iam_role_policy" "terraform_policy" {
           "iam:PassRole"
         ]
         Resource = "*"
+        "arn:aws:s3:::my-terraform-state-bucket",
+        "arn:aws:s3:::my-terraform-state-bucket/dev/*"
       }
     ]
   })
