@@ -1,0 +1,2 @@
+# Example terraform variables
+region = "us-east-1"

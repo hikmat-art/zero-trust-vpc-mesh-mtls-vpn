@@ -1,0 +1,9 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Local
+*.log
+.idea/
+.vscode/
