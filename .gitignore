@@ -1,9 +1,21 @@
+
+---
+
+### 2. `.gitignore`
+```plaintext
 # Terraform
 *.tfstate
 *.tfstate.*
 .terraform/
+.terraform.lock.hcl
 
-# Local
+# Logs
 *.log
-.idea/
-.vscode/
+
+# Local overrides
+terraform.tfvars
+*.auto.tfvars
+
+# OS files
+.DS_Store
+Thumbs.db
