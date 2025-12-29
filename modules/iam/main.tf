@@ -54,10 +54,10 @@ resource "aws_iam_role_policy" "terraform_policy" {
           "iam:GetRole",
           "iam:PassRole"
         ]
-        Resource = "*"
+        Resource = [
         "arn:aws:s3:::my-terraform-state-bucket",
         "arn:aws:s3:::my-terraform-state-bucket/dev/*"
-      }
+      ]
     ]
   })
 }
