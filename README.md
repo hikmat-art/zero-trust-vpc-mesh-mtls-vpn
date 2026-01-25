@@ -1,7 +1,7 @@
 # Zero-Trust VPC Mesh with mTLS VPN
 
 This project provisions a beginner/intermediate-level **zero-trust network architecture** on AWS using Terraform.  
-It demonstrates 3–4 years of AWS/Terraform proficiency with modular design, reproducibility, and security-first defaults.
+It demonstrates AWS/Terraform  with modular design, reproducibility, and security-first defaults.
 
 ## Features
 - Multi-VPC network mesh (dev + prod)
